@@ -1,0 +1,58 @@
+workstreams:
+  A: "제품기획·요구사항"
+  B: "개발·구축"
+  C: "QA·검증"
+  D: "외부협력·고객대응"
+  E: "사업화·운영"
+  F: "조직·계약·거버넌스"
+  G: "보고서·성과정리"
+keywords:
+  B:
+    - auth
+    - login
+    - signup
+    - dashboard
+    - admin
+    - api
+    - server
+    - controller
+    - service
+    - db
+    - schema
+    - migration
+    - model
+    - deploy
+    - release
+    - ci
+    - build
+  C:
+    - bug
+    - fix
+    - hotfix
+    - test
+    - qa
+    - spec
+  D:
+    - mit
+    - cooperation
+    - customer
+    - client
+    - feedback
+    - partner
+  E:
+    - pricing
+    - business
+    - kpi
+    - ops
+    - market
+  F:
+    - contract
+    - cto
+    - equity
+    - investor
+  G:
+    - docs
+    - readme
+    - notion
+    - report
+    - final

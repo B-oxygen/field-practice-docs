@@ -1,0 +1,105 @@
+[project]
+name = "field-practice-reconstructor"
+version = "0.1.0"
+description = "Evidence-based Dongguk University field-practice report reconstructor"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "defusedxml>=0.7",
+    "typer>=0.12",
+]
+
+[project.scripts]
+field-practice = "field_practice.cli:app"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.21",
+    "pytest>=8",
+    "ruff>=0.8",
+]
+
+[tool.basedpyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.11"
+pythonPlatform = "All"
+include = ["src", "tests"]
+exclude = ["**/__pycache__", "**/.venv", "**/build", "**/dist"]
+reportUnusedCallResult = "none"
+reportPrivateUsage = "none"
+reportUnknownArgumentType = "none"
+reportUnknownMemberType = "none"
+reportUnknownVariableType = "none"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM812",
+    "D203",
+    "D213",
+    "ISC001",
+    "CPY001",
+    "C901",
+    "D",
+    "E501",
+    "FBT001",
+    "FBT002",
+    "FLY002",
+    "PERF401",
+    "PLR0911",
+    "PLR0912",
+    "PLR0913",
+    "PLR2004",
+    "TC001",
+    "TC003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "D",
+    "PLR2004",
+    "S603",
+    "S607",
+    "S101",
+]
+"src/field_practice/discover_git.py" = ["S603"]
+"src/field_practice/export_hwpx.py" = ["S603"]
+"src/field_practice/ingest_local_git.py" = ["S603"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = [
+    "typer.Argument",
+    "typer.Option",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+    "-ra",
+    "--strict-config",
+    "--strict-markers",
+]
+filterwarnings = ["error"]

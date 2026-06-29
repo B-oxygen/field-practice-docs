@@ -1,0 +1,4 @@
+interface:
+  display_name: "Field Practice Docs"
+  short_description: "Doctor, draft, and document Korean field-practice submissions"
+  default_prompt: "Use $field-practice-docs to run doctor, draft, or document for a Korean field-practice HWPX/PDF submission."

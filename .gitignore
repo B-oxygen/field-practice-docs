@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+field-practice-out/
+.ouroboros_eval_artifact.md

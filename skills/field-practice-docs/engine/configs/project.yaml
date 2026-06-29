@@ -1,0 +1,23 @@
+student:
+  name: "홍길동"
+  department: "예시학과"
+  student_id: "0000000000"
+company:
+  name: "주식회사 예시컴퍼니"
+  registration_number: "000-00-00000"
+semester: "2026-1"
+timezone: "Asia/Seoul"
+period:
+  start: "2026-03-02"
+  end: "2026-06-21"
+limits:
+  max_minutes_per_day: 600
+  max_minutes_per_week: 3120
+targets:
+  "480": 28800
+  "640": 38400
+scenarios:
+  conservative:
+    current_minutes: 25519
+  with_week1:
+    current_minutes: 27019

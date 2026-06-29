@@ -1,0 +1,40 @@
+{
+  "name": "field-practice-docs",
+  "version": "0.1.0",
+  "description": "Korean university field-practice HWP/HWPX/PDF document automation.",
+  "author": {
+    "name": "Local developer"
+  },
+  "license": "MIT",
+  "keywords": [
+    "field-practice",
+    "hwpx",
+    "hwp",
+    "pdf",
+    "korean-university",
+    "document-automation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Field Practice Docs",
+    "shortDescription": "Doctor, draft, and document Korean field-practice submissions.",
+    "longDescription": "Prepare Korean university field-practice submissions through three commands: doctor checks the machine and templates, draft turns evidence into report content, and document fills, verifies, and finalizes HWPX/PDF files. The default workflow supports HWPX plus HOP/PDF without Hancom Office; Hancom is optional when native .hwp submission is forced.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Document automation",
+      "HWPX editing",
+      "PDF verification",
+      "No-Hancom workflow"
+    ],
+    "defaultPrompt": [
+      "doctor: check my HWPX/PDF field-practice setup",
+      "draft: build reports from git/calendar/alog evidence",
+      "document: fill and verify my HWPX/PDF submission"
+    ],
+    "brandColor": "#1F6F5B",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  }
+}
