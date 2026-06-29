@@ -95,7 +95,7 @@ PY
 
 install_node_deps() {
   if command -v npm >/dev/null 2>&1; then
-    (cd "$PLUGIN_DIR/skills/$PLUGIN_NAME" && npm install --no-save @rhwp/core >/dev/null)
+    (cd "$PLUGIN_DIR/skills/$PLUGIN_NAME" && npm ci --omit=dev --ignore-scripts >/dev/null)
   fi
 }
 

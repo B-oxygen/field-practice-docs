@@ -1,0 +1,10 @@
+{
+  "name": "field-practice-docs-skill-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pinned Node runtime dependencies for Field Practice Docs HWP/HWPX tooling.",
+  "license": "MIT",
+  "dependencies": {
+    "@rhwp/core": "0.7.17"
+  }
+}
